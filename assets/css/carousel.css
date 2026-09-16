@@ -1,0 +1,84 @@
+.carousel {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.carousel__row {
+    display: flex;
+    align-items: center;
+}
+button {
+  font: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+.carousel__btn {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  opacity: 50%;
+}
+
+.carousel__btn:hover {
+  opacity: 100%;
+}
+.carousel__btn_type_left::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/left.svg");
+}
+
+.carousel__btn_type_right {
+  background-image: url("../images/right.svg");
+}
+
+.carousel__btn_type_flip {
+  background-image: url("../images/flip.svg");
+  margin-top: 24px ;
+}
+
+.carousel__btn_disabled {
+  opacity: 20%;
+  cursor: none;
+}
+
+.carousel__title{
+font-weight: 500;
+font-size: 14px;
+color: #1a1a1a80;
+display: flex;
+margin-bottom: 32px;
+margin-top: 106px;
+
+}
+.carousel__card {
+   font-family: inherit;
+  /*background-color: #65d583; hidden to properl display colors 
+  into carousel decks*/ 
+ width: 440px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px;
+}
+
+.carousel__card-text {
+ font-weight: 700;
+  font-size: 32px;
+}
