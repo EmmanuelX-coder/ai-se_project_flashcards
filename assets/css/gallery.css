@@ -1,19 +1,18 @@
-.decks {
+.gallery {
 gap: 20px;
 }
 
-.deck__title {
+.card__title {
   margin: 0;
 }
 
-.decks__title {
+.gallery__title {
   font-size: 24px;
 font-weight: 700;
 line-height: 1.2;
-
 }
 
-.decks__list {
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -21,7 +20,7 @@ line-height: 1.2;
   margin-top: 40px;
 }
 
-.decks__new-deck-btn {
+.gallery__new-card-btn {
   font-weight: 700;
   display: flex;
   font-size: 24px;
@@ -36,12 +35,12 @@ line-height: 1.2;
   border-radius: 20px;
 }
 
-.decks__new-deck-btn:hover {
+.gallery__new-card-btn:hover {
   background-color: #c5c5c5;
   color: #1a1a1a;
 }
 
-.deck {
+.card {
   font-family: inherit;
   background-color: #65d583;
   width: 325px;
@@ -55,12 +54,12 @@ line-height: 1.2;
   position: relative;
 }
 
-.deck_color_green {background-color: #64d583;}
-.deck_color_blue {background-color: #91a8f9;}
-.deck_color_pink {background-color: #ee92d7;}
-.deck_color_purple {background-color: #aa8ef0;}
-.deck_color_orange {background-color: #ee955e;}
-.deck_color_yellow {background-color: #f5d770;}
+.card_color_green {background-color: #64d583;}
+.card_color_blue {background-color: #91a8f9;}
+.card_color_pink {background-color: #ee92d7;}
+.card_color_purple {background-color: #aa8ef0;}
+.card_color_orange {background-color: #ee955e;}
+.card_color_yellow {background-color: #f5d770;}
 
 .card__carousel_color_green { background-color: #64d583; }
 .card__carousel_color_blue { background-color: #91a8f9; }
@@ -70,7 +69,7 @@ line-height: 1.2;
 .card__carousel_color_yellow { background-color: #f5d770; }
 .card__carousel_color_white { background-color: #ffffff;}
 
-.deck__delete-btn {
+.card__delete-btn {
   background-image: url("../images/delete.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -84,20 +83,20 @@ line-height: 1.2;
   z-index: 2;
 }
 
-.deck__row {
+.card__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.deck__count {
+.card__count {
   margin: 0;
   font-weight: 400;
 font-size: 16px;
 line-height: 1.2;
 }
 
-.deck__link {
+.card__link {
   position: absolute;
   inset: 0; 
   z-index: 1;
